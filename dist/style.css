@@ -1,0 +1,168 @@
+/** Add any CSS you need to this file. */
+html {
+  background-color: #b2fcff;
+  font-size: 100%;
+}
+.page-header {
+  background-color: white;
+  font-family: 'Open Sana Condensed', sans-serif;
+}
+#logo {
+  width: 20px;
+  padding: 20px;
+}
+#logo-big {
+  width: 40px;
+}
+#Title {
+  font-size: 24px;
+}
+div.jumbotron {
+  background-color: #b2fcff;
+}
+#contact-btn {
+  background-color: #5edfff;
+  border: none;
+  color: white;
+}
+#menu-header {
+  font-size: 20px;
+  color: black;
+}
+figure {
+  height: 'auto';
+}
+.column figcaption {
+  font-size: 15px;
+  margin: 5px;
+  font-family: 'Oswald', sans-serif;
+}
+.column p {
+  font-size: 13px;
+  color: grey;
+}
+body {
+  overflow-x: hidden;
+}
+#menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #5edfff;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.7s;
+  font-size: 10px;
+}
+.nav a {
+  display: block;
+  padding: 20px 30px;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.nav :hover {
+  color: white;
+  text-decoration: none;
+}
+.nav .close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+}
+.nav .open {
+  height: 30px;
+}
+.slide a {
+  width: 36px;
+  @media (min-width: 640px) {
+    width: 20%;
+  }
+}
+
+.container {
+  overflow: hidden;
+}
+.filterDiv {
+  display: block;
+}
+.show {
+  display: block;
+}
+
+footer {
+  background-color: #b2fcff;
+  height: 20pt;
+}
+
+footer div {
+  padding: 5px;
+}
+h6 {
+  padding: 10px;
+}
+.form {
+  padding: 10px;
+}
+
+.container form {
+  margin-top: 3em;
+  padding: 2em;
+  max-width: 600px;
+  min-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  align-items: center;
+  grid-gap: 20px;
+}
+.container .text-center {
+  display: inline-block;
+}
+label {
+  display: inline-block;
+  text-align: left;
+}
+
+#date {
+  padding: 10pt;
+  border: 20pt;
+  font-size: 15pt;
+}
+
+.row {
+  display: grid;
+}
+h4 {
+  font-family: 'Oswald', sans-serif;
+}
+#date {
+  font-family: 'Oswald', sans-serif;
+}
+#store-description,
+#title {
+  font-family: 'Oswald', sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1100px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
