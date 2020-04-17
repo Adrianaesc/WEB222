@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewpoint" content="width= device-width, initial-scale=1" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <title>WEB222 Store</title>
   </head>
   <body>
@@ -12,7 +11,6 @@
     </div>
     <div class="links">
       <!-- internal style.css & script.js-->
-      <script type="text/javascript" src="../src/script.js"></script>
       <link rel="stylesheet" href="style.css" type="text/css" />
       <!--bootstrap-->
 
@@ -152,6 +150,51 @@
     <div id="date">
       <script>
         window.getMymonth();
+        function getMymonth() {
+          var date = new Date();
+          var mon = date.getMonth();
+          var word;
+          if (mon === 0) {
+            word = 'January';
+          }
+          if (mon === 1) {
+            word = 'February';
+          }
+          if (mon === 2) {
+            word = 'March';
+          }
+          if (mon === 3) {
+            word = 'April';
+          }
+          if (mon === 4) {
+            word = 'May';
+          }
+          if (mon === 5) {
+            word = 'June';
+          }
+          if (mon === 6) {
+            word = 'July';
+          }
+          if (mon === 7) {
+            word = 'August';
+          }
+          if (mon === 8) {
+            word = 'September';
+          }
+          if (mon === 9) {
+            word = 'October';
+          }
+          if (mon === 10) {
+            word = 'November';
+          }
+          if (mon === 11) {
+            word = 'December';
+          }
+
+          var elem = document.getElementById('date');
+          var actualDate = document.createTextNode('Our ' + word + ' Catalog:');
+          elem.appendChild(actualDate);
+        }
       </script>
     </div>
 
@@ -583,52 +626,7 @@
           div.appendChild(addTA);
         }
       }
-      getMymonth();
-      function getMymonth() {
-        var date = new Date();
-        var mon = date.getMonth();
-        var word;
-        if (mon === 0) {
-          word = 'January';
-        }
-        if (mon === 1) {
-          word = 'February';
-        }
-        if (mon === 2) {
-          word = 'March';
-        }
-        if (mon === 3) {
-          word = 'April';
-        }
-        if (mon === 4) {
-          word = 'May';
-        }
-        if (mon === 5) {
-          word = 'June';
-        }
-        if (mon === 6) {
-          word = 'July';
-        }
-        if (mon === 7) {
-          word = 'August';
-        }
-        if (mon === 8) {
-          word = 'September';
-        }
-        if (mon === 9) {
-          word = 'October';
-        }
-        if (mon === 10) {
-          word = 'November';
-        }
-        if (mon === 11) {
-          word = 'December';
-        }
-
-        var elem = document.getElementById('date');
-        var actualDate = document.createTextNode('Our ' + word + ' Catalog:');
-        elem.appendChild(actualDate);
-      }
+      //getMymonth();
     </script>
     <!--more bootstrap-->
     <script
